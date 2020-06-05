@@ -22,7 +22,7 @@ export default {
     },
 
     isUserLoaded () {
-      return this.user && Object.keys(this.selectedUser).length
+      return this.selectedUser && Object.keys(this.selectedUser).length
     }
   },
   beforeMount() {
