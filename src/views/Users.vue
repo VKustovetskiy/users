@@ -1,5 +1,9 @@
 <template>
   <v-container fluid>
+    <notifications
+      group="userCrud"
+      position="top right"/>
+
     <transition name="fade" mode="out-in">
       <router-view/>
     </transition>

@@ -63,6 +63,10 @@ export default {
     displayShowBtn: {
       type: Boolean,
       default: true
+    },
+    redirectOnDelete: {
+      type: Function,
+      default: () => {}
     }
   },
   data: () => ({
@@ -92,6 +96,7 @@ export default {
           group: 'userCrud',
           text: 'Successfully deleted.'
         })
+        this.redirectOnDelete()
       } catch {
         this.setLoadingState(false)
       }

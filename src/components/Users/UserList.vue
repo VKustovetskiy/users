@@ -42,10 +42,6 @@
       <users-create-user-form
         :cancel-handler="toggleCreateDialog" />
     </v-dialog>
-
-    <notifications
-      group="userCrud"
-      position="top right"/>
   </div>
 </template>
 

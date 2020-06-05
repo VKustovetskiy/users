@@ -3,6 +3,7 @@
     v-if="isUserLoaded"
     :user="selectedUser"
     :display-show-btn="false"
+    :redirect-on-delete="redirectToUserList"
   />
 
 </template>
@@ -41,6 +42,10 @@ export default {
         this.setLoadingState(false)
         this.$router.push({ name: 'UserList' })
       }
+    },
+
+    redirectToUserList () {
+      this.$router.push({ name: 'UserList' })
     }
   }
 
